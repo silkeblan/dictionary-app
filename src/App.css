@@ -4,3 +4,10 @@ h1 {
   position: block;
   margin: 30px;
 }
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  
+}
