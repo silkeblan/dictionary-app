@@ -1,5 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
+import "./Results.css"
 
 export default function Results(props) {
   if (props.response === null) {
@@ -11,6 +12,7 @@ export default function Results(props) {
         {props.response.meanings.map(function (meaning, index) {
           return(
             <div key={index}>
+              <h3>{meaning.partOfSpeech}</h3>
               <Meaning meaning = {meaning}/>
             </div>
           )
