@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Meaning(props) {
-  return (
+    return (
     <div className="Meaning">
       {props.meaning.definitions.map(function (definition, index) {
         return (

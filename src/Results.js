@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css"
+import Synonyms from "./Synonyms";
 
 export default function Results(props) {
   if (props.response === null) {
@@ -14,6 +15,7 @@ export default function Results(props) {
             <div key={index}>
               <h3>{meaning.partOfSpeech}</h3>
               <Meaning meaning = {meaning}/>
+              <Synonyms synonyms = {meaning.synonyms}/>
             </div>
           )
         })}
