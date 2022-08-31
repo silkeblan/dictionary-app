@@ -12,6 +12,7 @@ export default function Dictionary() {
 //API documentation: https://dictionaryapi.dev/
 
   function handleResponse(response) {
+    console.log(response.data);
     setResponse(response.data[0]);
   }
 

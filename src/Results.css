@@ -1,3 +1,26 @@
 .Results {
-  padding-left: 30px;
+  padding: 40px 80px;
+}
+
+.Results h2 {
+  text-transform: lowercase;
+  font-size: 38px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline;
+}
+
+.Results .search-result {
+  margin-bottom: 20px;
+}
+
+.Results .phonetics {
+  display: inline;
+}
+
+.Results section {
+  background: rgb(241, 246, 249);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }

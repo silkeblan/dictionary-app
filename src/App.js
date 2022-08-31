@@ -6,7 +6,9 @@ export default function App() {
     <div className="App">
       <h1>Dictionary</h1>
       <Dictionary/>
-      <footer>Open-source code by Silke Blansjaar</footer>
+      <footer>
+        <span className="signature">Open-source code by Silke Blansjaar</span>
+      </footer>
     </div>
   );
 }

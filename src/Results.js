@@ -10,21 +10,23 @@ export default function Results(props) {
   } else {
     return (
       <div className="Results">
-        <h2>{props.response.word}</h2>
-        {props.response.phonetics.map(function (phonetic, index) {
-          return(
-            <div key={index}>
-              <Phonetics phonetics = {phonetic}/>
-            </div>
-          )
-        })}
+          <section className="search-result">
+          <h2>{props.response.word}</h2>
+          {props.response.phonetics.map(function (phonetic, index) {
+            return(
+              <span key={index}className="phonetics">
+                <Phonetics phonetics = {phonetic}/>
+              </span>
+            )
+          })}
+          </section>
         {props.response.meanings.map(function (meaning, index) {
           return(
-            <div key={index}>
-              <h3>{meaning.partOfSpeech}</h3>
-              <Meaning meaning = {meaning}/>
-              <Synonyms synonyms = {meaning.synonyms}/>
-            </div>
+            <section><div key={index}>
+                <h3>{meaning.partOfSpeech}</h3>
+                <Meaning meaning = {meaning}/>
+                <Synonyms synonyms = {meaning.synonyms}/>
+            </div></section>
           )
         })}
       </div>
